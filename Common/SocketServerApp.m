@@ -61,6 +61,8 @@ static SocketServerApp *instance;
     return _connectedClientsDic;
 }
 
+#pragma mark - Public Methods
+
 - (void)startListenOnPort:(int)port {
     NSError *error = nil;
     self.listening = [self.serverSocket acceptOnPort:port error:&error];
